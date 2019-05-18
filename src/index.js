@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, View } from 'react-navi';
+import { Router, View, } from 'react-navi';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import routes from './views/routes';
@@ -11,7 +10,9 @@ ReactDOM.render(
   <Router routes={routes}>
     <View />
   </Router>,
-  document.getElementById('root'),
+  document.getElementById(
+    'root'
+  ),
 );
 
 // If you want your app to work offline and load faster, you can change
