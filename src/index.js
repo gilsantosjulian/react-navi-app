@@ -1,18 +1,21 @@
-import React from 'react';
+import React, { Suspense, } from 'react';
 import ReactDOM from 'react-dom';
 import { Router, View, } from 'react-navi';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
 import routes from './views/routes';
+import Layout from './components/templates/Layout';
 
 ReactDOM.render(
   <Router routes={routes}>
-    <View />
+    <Layout>
+      <Suspense fallback={null}>
+        <View />
+      </Suspense>
+    </Layout>
   </Router>,
-  document.getElementById(
-    'root'
-  ),
+  document.getElementById('root'),
 );
 
 // If you want your app to work offline and load faster, you can change
