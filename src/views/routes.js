@@ -1,27 +1,21 @@
 import React from 'react';
 import { mount, route, } from 'navi';
-import App from '../App';
-import Product from '../Product';
+import Home from './home/Home';
+import NotFound from './notFound/NotFound';
 
 // Define your routes
-const routes = mount(
-  {
-    '/': route(
-      {
-        title: 'App',
-        getData: () => {},
-        view: <App />,
-      }
-    ),
-    // "/products": lazy(() => import("./productsRoutes"))
-    '/product': route(
-      {
-        title: 'Product',
-        getData: () => {},
-        view: <Product />,
-      }
-    ),
-  }
-);
+const routes = mount({
+  '/': route({
+    title: 'Home',
+    getData: () => {},
+    view: <Home />,
+  }),
+  // "/products": lazy(() => import("./productsRoutes"))
+  '/notFound': route({
+    title: 'NotFound',
+    getData: () => {},
+    view: <NotFound />,
+  }),
+});
 
 export default routes;
