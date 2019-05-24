@@ -23,6 +23,7 @@ module.exports = {
     ], // allow .js extension
     'react/jsx-one-expression-per-line': 'off', // disable put jsx expressions in a new line,
     'react/prefer-stateless-function': 1, // Only use function components 'Warning'
+    'react/prop-types': [2, { ignore: ['children'] }], // Avoid validate props when is children
     'no-console': 'off', // Don't use console.log() 'Warning'
     'no-alert': 1, // Don't use alert()'Warning'
     'space-before-function-paren': 0, // space between functions
@@ -40,7 +41,6 @@ module.exports = {
     'no-trailing-spaces': 'off', // allow trailing spaces
     'no-plusplus': 'off', // enable plusplus e.g. let a = 1; a++;
     'no-await-in-loop': 'off', // enable await for using it inside a loop
-    'function-paren-newline': ['error', { minItems: 1 }], // add new line in functions that has one argument or more
     'import/prefer-default-export': 'off', // export default not mandatory
     'array-bracket-spacing': ['error', 'always'], // to put sapaces at the begining and the end of array
   },
