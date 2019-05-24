@@ -11,11 +11,16 @@ export default function Layout({ children, }) {
     <div className="Layout">
       {/* This component shows a loading indicator after a delay */}
       <BusyIndicator isBusy={!!loadingRoute} delayMs={200} />
-      <header className="Layout-header">
-        <h1 className="Layout-title">
-          <Link href="/">--- back</Link>
-        </h1>
-      </header>
+      <nav>
+        <ul>
+          <Link href="/">Home</Link>
+          <Link href="/about-us">About Us</Link>
+          <Link href="/services">Services</Link>
+          <Link href="/galery">Galery</Link>
+          <Link href="/blog">Blog</Link>
+          <Link href="/contact-us">Contact us</Link>
+        </ul>
+      </nav>
       <main>{children}</main>
     </div>
   );
