@@ -1,26 +1,11 @@
 import React from 'react';
-import { Link, } from 'react-navi';
 import PropTypes from 'prop-types';
+import NavLinks from '../molecules/NavLinks';
 
 export default function Nabvar(props) {
   const { items, } = props;
 
-  const renderItems = data => (
-    <div>
-      {data
-        && data.map(item => (
-          <Link key={item.title} href={item.href}>
-            {item.title}
-          </Link>
-        ))}
-    </div>
-  );
-
-  return (
-    <nav>
-      <ul>{renderItems(items)}</ul>
-    </nav>
-  );
+  return <NavLinks items={items} />;
 }
 
 Nabvar.propTypes = {
