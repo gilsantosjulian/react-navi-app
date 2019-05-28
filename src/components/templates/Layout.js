@@ -1,4 +1,6 @@
 import React from 'react';
+import BusyIndicator from 'react-busy-indicator';
+import { useLoadingRoute, } from 'react-navi';
 import Navbar from '../organisms/Nabvar';
 
 const items = [
@@ -7,7 +9,7 @@ const items = [
     href: '/',
   },
   {
-    title: 'Abou',
+    title: 'About',
     href: '/about-us',
   },
   {
@@ -33,7 +35,7 @@ const items = [
     href: '/blog',
   },
   {
-    title: 'Contac',
+    title: 'Contact',
     href: '/contact-us',
   },
 ];
@@ -41,12 +43,12 @@ const items = [
 export default function Layout({ children, }) {
   // If there is a route that hasn't finished loading, it can be
   // retrieved with `useLoadingRoute()`.
-  // const loadingRoute = useLoadingRoute();
+  const loadingRoute = useLoadingRoute();
 
   return (
     <div className="Layout">
       {/* This component shows a loading indicator after a delay */}
-      {/* <BusyIndicator isBusy={!!loadingRoute} delayMs={200} /> */}
+      <BusyIndicator isBusy={!!loadingRoute} delayMs={200} />
       <Navbar items={items} />
       <main>{children}</main>
     </div>
