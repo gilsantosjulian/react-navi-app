@@ -9,7 +9,7 @@ const ImgContainer = Styled.div`
 export default function Logo() {
   return (
     <ImgContainer>
-      <img src={logo} style={{ height: '10vmin', }} alt="logo" />
+      <img src={logo} style={{ height: '5vmin', }} alt="logo" />
     </ImgContainer>
   );
 }
