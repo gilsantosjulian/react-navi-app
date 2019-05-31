@@ -27,10 +27,10 @@ const NavLink = Styled.li`
 `;
 
 const Span = Styled.span`
+  font-family: Open Sans;
+  font-weight: 300;
   font-size: 16px;
-  line-height: 24px;
-  font-family: Foundry;
-  font-weight: 600;
+  padding: .6em;
 `;
 
 const styles = {
