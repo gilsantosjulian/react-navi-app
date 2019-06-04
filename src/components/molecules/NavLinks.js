@@ -15,7 +15,7 @@ export default function Navlinks(props) {
   return (
     <Wrapper>
       {items.map(item => (
-        <Navlink item={item} />
+        <Navlink key={`${item.title}_${item.href}`} item={item} />
       ))}
     </Wrapper>
   );

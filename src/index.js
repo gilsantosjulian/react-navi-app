@@ -1,6 +1,5 @@
 import React, { Suspense, } from 'react';
 import ReactDOM from 'react-dom';
-import { Grommet, } from 'grommet';
 import { Router, View, } from 'react-navi';
 import './index.css';
 // import theme from 'config/theme';
@@ -10,15 +9,13 @@ import routes from './views/routes';
 import Layout from './components/templates/Layout';
 
 ReactDOM.render(
-  <Grommet full>
-    <Router routes={routes}>
-      <Layout>
-        <Suspense fallback={null}>
-          <View />
-        </Suspense>
-      </Layout>
-    </Router>
-  </Grommet>,
+  <Router routes={routes}>
+    <Layout>
+      <Suspense fallback={null}>
+        <View />
+      </Suspense>
+    </Layout>
+  </Router>,
   document.getElementById('root'),
 );
 
