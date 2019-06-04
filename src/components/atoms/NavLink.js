@@ -1,5 +1,5 @@
 import React from 'react';
-import Styled from 'styled-components';
+import Styled, { withTheme, } from 'styled-components';
 import PropTypes from 'prop-types';
 import { Link, } from 'react-navi';
 
@@ -31,23 +31,26 @@ const Span = Styled.span`
   font-weight: 300;
   font-size: 16px;
   padding: .6em;
+  &:hover {
+    color: ${props => props.theme.colors.secondary};
+  }
 `;
 
 const styles = {
   anchor: {
-    color: 'rgb(46, 65, 109)',
     fontWeight: 600,
     cursor: 'pointer',
     textDecoration: 'none',
   },
 };
 
-export default function Navlink(props) {
-  const { item, } = props;
+function Navlink(props) {
+  const { item, theme, } = props;
+  const anchorStyle = { ...styles.anchor, color: theme.colors.primary, };
 
   return (
     <NavLink key={`${item.href}-${item.title}`}>
-      <Link style={styles.anchor} key={`${item.href}-${item.title}`} href={item.href}>
+      <Link style={anchorStyle} key={`${item.href}-${item.title}`} href={item.href}>
         <Span>{item.title}</Span>
       </Link>
     </NavLink>
@@ -56,4 +59,7 @@ export default function Navlink(props) {
 
 Navlink.propTypes = {
   item: PropTypes.objectOf(PropTypes.object).isRequired,
+  theme: Object.isRequired,
 };
+
+export default withTheme(Navlink);
