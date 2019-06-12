@@ -1,19 +1,15 @@
 import React from 'react';
-import Styled from 'styled-components';
 import PropTypes from 'prop-types';
-import Navlink from '../atoms/NavLink';
+import Navlink from '../../atoms/navLink/NavLink';
+import { Wrapper, } from './styled';
 
-const Wrapper = Styled.nav`
-  display: flex;
-  align-items: center;
-  margin-right: 30px;
-`;
+const ID = 'ul';
 
-export default function Navlinks(props) {
+export default function Ul(props) {
   const { items, } = props;
 
   return (
-    <Wrapper>
+    <Wrapper id={ID}>
       {items.map(item => (
         <Navlink key={`${item.title}_${item.href}`} item={item} />
       ))}
@@ -21,6 +17,6 @@ export default function Navlinks(props) {
   );
 }
 
-Navlinks.propTypes = {
+Ul.propTypes = {
   items: PropTypes.instanceOf(PropTypes.object).isRequired,
 };

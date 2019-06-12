@@ -1,14 +1,12 @@
 import React from 'react';
-import Styled from 'styled-components';
-import logo from '../../assets/images/logo.svg';
+import { ImgContainer, } from './styled';
+import logo from '../../../assets/images/logo.svg';
 
-const ImgContainer = Styled.div`
-  display: flex;
-`;
+const ID = 'logo';
 
 export default function Logo() {
   return (
-    <ImgContainer>
+    <ImgContainer id={ID}>
       <img src={logo} style={{ height: '5vmin', }} alt="logo" />
     </ImgContainer>
   );
