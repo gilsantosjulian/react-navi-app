@@ -2,6 +2,7 @@
   "name": "react-navi-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://gilsantosjulian.github.io/react-navi-app",
   "dependencies": {
     "navi": "^0.12.6",
     "prop-types": "^15.7.2",
@@ -30,7 +31,9 @@
     "eject": "react-scripts eject",
     "prettier": "prettier 'src/**/*.{js,jsx}' --write",
     "lint": "eslint --debug 'src/**/*.{js,jsx}'",
-    "lint:write": "eslint --debug 'src/**/*.{js,jsx}' --fix"
+    "lint:write": "eslint --debug 'src/**/*.{js,jsx}' --fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "husky": {
     "hooks": {
