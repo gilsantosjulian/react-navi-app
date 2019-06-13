@@ -1,36 +1,37 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
   [0],
   {
-    22(e, n, t) {
+    22: function(e, n, t) {
       e.exports = t(43);
     },
-    34(e, n, t) {},
-    35(e, n, t) {},
-    36(e, n, t) {},
-    37(e, n, t) {},
-    38(e, n, t) {},
-    39(e, n, t) {},
-    40(e, n, t) {},
-    43(e, n, t) {
+    34: function(e, n, t) {},
+    35: function(e, n, t) {},
+    36: function(e, n, t) {},
+    37: function(e, n, t) {},
+    38: function(e, n, t) {},
+    39: function(e, n, t) {},
+    40: function(e, n, t) {},
+    43: function(e, n, t) {
+      'use strict';
       t.r(n);
-      const a = t(0);
-      const r = t.n(a);
-      const o = t(5);
-      const c = t.n(o);
-      const i = t(4);
+      var a = t(0),
+        r = t.n(a),
+        o = t(5),
+        c = t.n(o),
+        i = t(4);
       t(34),
         Boolean(
-          window.location.hostname === 'localhost' ||
-            window.location.hostname === '[::1]' ||
+          'localhost' === window.location.hostname ||
+            '[::1]' === window.location.hostname ||
             window.location.hostname.match(
               /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/,
             ),
         );
-      const l = t(1);
-      const u = t(6);
-      const m = t.n(u);
+      var l = t(1),
+        u = t(6),
+        m = t.n(u);
       t(35);
-      const s = function() {
+      var s = function() {
         return r.a.createElement(
           'div',
           { className: 'App' },
@@ -59,91 +60,91 @@
         );
       };
       t(36);
-      const d = function() {
+      var d = function() {
         return r.a.createElement('div', { className: 'About' }, 'About Component');
       };
       t(37);
-      const f = function() {
+      var f = function() {
         return r.a.createElement('div', { className: 'Services' }, 'Services Component');
       };
       t(38);
-      const p = function() {
+      var p = function() {
         return r.a.createElement('div', { className: 'Galery' }, 'Galery Component');
       };
       t(39);
-      const v = function() {
+      var v = function() {
         return r.a.createElement('div', { className: 'Blog' }, 'Blog Component');
       };
       t(40);
-      const h = function() {
+      var h = function() {
         return r.a.createElement('div', { className: 'Contact' }, 'Contact Component');
       };
-      const b = function() {
-        return r.a.createElement('div', { className: 'App' }, 'NotFound View');
-      };
-      const g = Object(l.g)({
-        '/': Object(l.h)({
-          title: 'Home',
-          getData() {},
-          view: r.a.createElement(s, null),
-        }),
-        '/about-us': Object(l.h)({
-          title: 'About Us',
-          getData() {},
-          view: r.a.createElement(d, null),
-        }),
-        '/services': Object(l.h)({
-          title: 'Services',
-          getData() {},
-          view: r.a.createElement(f, null),
-        }),
-        '/galery': Object(l.h)({
-          title: 'Galery',
-          getData() {},
-          view: r.a.createElement(p, null),
-        }),
-        '/blog': Object(l.h)({
-          title: 'Blog',
-          getData() {},
-          view: r.a.createElement(v, null),
-        }),
-        '/contact-us': Object(l.h)({
-          title: 'Contact Us',
-          getData() {},
-          view: r.a.createElement(h, null),
-        }),
-        '/notFound': Object(l.h)({
-          title: 'NotFound',
-          getData() {},
-          view: r.a.createElement(b, null),
-        }),
-      });
-      const E = t(19);
-      const w = t(16);
-      const x = t(2);
-      const y = t(8);
-      const j = t.n(y);
-      const O = j()('mode', { light: '#fafafa', dark: '#222' });
-      const k = j()('mode', { light: '#000', dark: '#fff' });
-      const N = { primary: 'rgb(46, 65, 109)', secondary: 'rgb(90, 191, 237)' };
-      const A = [
-        { title: 'Home', href: '/' },
-        { title: 'About', href: '/about-us' },
-        {
-          dropdown: !0,
-          title: 'Services',
-          items: [
-            { name: 'Service One', href: '/service-one' },
-            { name: 'Service Two', href: '/service-two' },
-          ],
+      var b = function() {
+          return r.a.createElement('div', { className: 'App' }, 'NotFound View');
         },
-        { title: 'Galery', href: '/galery' },
-        { title: 'Blog', href: '/blog' },
-        { title: 'Contact', href: '/contact-us' },
-      ];
-      const S = t(3);
+        g = Object(l.g)({
+          '/': Object(l.h)({
+            title: 'Home',
+            getData: function() {},
+            view: r.a.createElement(s, null),
+          }),
+          '/about-us': Object(l.h)({
+            title: 'About Us',
+            getData: function() {},
+            view: r.a.createElement(d, null),
+          }),
+          '/services': Object(l.h)({
+            title: 'Services',
+            getData: function() {},
+            view: r.a.createElement(f, null),
+          }),
+          '/galery': Object(l.h)({
+            title: 'Galery',
+            getData: function() {},
+            view: r.a.createElement(p, null),
+          }),
+          '/blog': Object(l.h)({
+            title: 'Blog',
+            getData: function() {},
+            view: r.a.createElement(v, null),
+          }),
+          '/contact-us': Object(l.h)({
+            title: 'Contact Us',
+            getData: function() {},
+            view: r.a.createElement(h, null),
+          }),
+          '/notFound': Object(l.h)({
+            title: 'NotFound',
+            getData: function() {},
+            view: r.a.createElement(b, null),
+          }),
+        }),
+        E = t(19),
+        w = t(16),
+        x = t(2),
+        y = t(8),
+        j = t.n(y),
+        O = j()('mode', { light: '#fafafa', dark: '#222' }),
+        k = j()('mode', { light: '#000', dark: '#fff' }),
+        N = { primary: 'rgb(46, 65, 109)', secondary: 'rgb(90, 191, 237)' },
+        A = [
+          { title: 'Home', href: '/' },
+          { title: 'About', href: '/about-us' },
+          {
+            dropdown: !0,
+            title: 'Services',
+            items: [
+              { name: 'Service One', href: '/service-one' },
+              { name: 'Service Two', href: '/service-two' },
+            ],
+          },
+          { title: 'Galery', href: '/galery' },
+          { title: 'Blog', href: '/blog' },
+          { title: 'Contact', href: '/contact-us' },
+        ],
+        S = t(3);
       function C() {
-        const e = Object(S.a)([
+        var e = Object(S.a)([
           '\n  display: block;\n  text-decoration: none;\n  width: 25px;\n  height: 5px;\n  border-bottom: 2px solid;\n  overflow: hidden;\n',
         ]);
         return (
@@ -154,7 +155,7 @@
         );
       }
       function D() {
-        const e = Object(S.a)([
+        var e = Object(S.a)([
           '\n  position: relative;\n  display: block;\n  margin-top: -13px;\n  margin-right: 6%;\n  z-index: 1999;\n  transform: translateY(40%);\n',
         ]);
         return (
@@ -164,8 +165,8 @@
           e
         );
       }
-      const B = x.b.div(D());
-      const L = x.b.div(C());
+      var B = x.b.div(D()),
+        L = x.b.div(C());
       function Y() {
         return r.a.createElement(
           B,
@@ -176,7 +177,7 @@
         );
       }
       function F() {
-        const e = Object(S.a)(['\n  display: flex;\n']);
+        var e = Object(S.a)(['\n  display: flex;\n']);
         return (
           (F = function() {
             return e;
@@ -184,8 +185,8 @@
           e
         );
       }
-      const G = x.b.div(F());
-      const z = 'logo';
+      var G = x.b.div(F()),
+        z = 'logo';
       function W() {
         return r.a.createElement(
           G,
@@ -193,9 +194,9 @@
           r.a.createElement('img', { src: m.a, style: { height: '5vmin' }, alt: 'logo' }),
         );
       }
-      const H = t(21);
+      var H = t(21);
       function J() {
-        const e = Object(S.a)([
+        var e = Object(S.a)([
           '\n  font-family: Open Sans;\n  font-weight: 300;\n  font-size: 16px;\n  padding: .6em;\n  &:hover {\n    color: ',
           ';\n  }\n',
         ]);
@@ -207,7 +208,7 @@
         );
       }
       function M() {
-        const e = Object(S.a)([
+        var e = Object(S.a)([
           '\n  display: flex;\n  max-width: 100%;\n  height: 50%;\n  align-items: center;\n  min-width: 0px;\n  min-height: 0px;\n  flex-direction: column;\n  justify-content: center;\n  font-family: Foundry;\n  outline: none;\n  margin: 0px;\n  padding: 6px;\n  &:hover,\n  &:focus {\n    opacity: 0.8;\n  }\n  &:active {\n    transform: scale(0.95);\n    opacity: 0.6;\n  }\n',
         ]);
         return (
@@ -217,16 +218,16 @@
           e
         );
       }
-      const U = x.b.li(M());
-      const _ = x.b.span(J(), e => e.theme.colors.secondary);
-      const I = {
-        anchor: { fontWeight: 600, cursor: 'pointer', textDecoration: 'none' },
-      };
-      const R = 'li';
-      const T = Object(x.c)(e => {
-        const n = e.item;
-        const t = e.theme;
-        const a = Object(H.a)({}, I.anchor, { color: t.colors.primary });
+      var U = x.b.li(M()),
+        _ = x.b.span(J(), function(e) {
+          return e.theme.colors.secondary;
+        }),
+        I = { anchor: { fontWeight: 600, cursor: 'pointer', textDecoration: 'none' } },
+        R = 'li';
+      var T = Object(x.c)(function(e) {
+        var n = e.item,
+          t = e.theme,
+          a = Object(H.a)({}, I.anchor, { color: t.colors.primary });
         return r.a.createElement(
           U,
           { id: R, key: ''.concat(n.href, '-').concat(n.title) },
@@ -243,7 +244,7 @@
         );
       });
       function V() {
-        const e = Object(S.a)([
+        var e = Object(S.a)([
           '\n  display: flex;\n  align-items: center;\n  margin-right: 30px;\n',
         ]);
         return (
@@ -253,39 +254,39 @@
           e
         );
       }
-      const $ = x.b.nav(V());
-      const q = 'ul';
+      var $ = x.b.nav(V()),
+        q = 'ul';
       function K(e) {
-        const n = e.items;
+        var n = e.items;
         return r.a.createElement(
           $,
           { id: q },
-          n.map(e =>
-            r.a.createElement(T, {
+          n.map(function(e) {
+            return r.a.createElement(T, {
               key: ''.concat(e.title, '_').concat(e.href),
               item: e,
-            }),
-          ),
+            });
+          }),
         );
       }
-      const P = '375px';
-      const Q = '425px';
-      const X = '768px';
-      const Z = '1024px';
-      const ee = '1440px';
-      const ne = '2560px';
-      const te = {
-        mobileS: '(max-width: '.concat('320px', ')'),
-        mobileM: '(max-width: '.concat(P, ')'),
-        mobileL: '(max-width: '.concat(Q, ')'),
-        tablet: '(max-width: '.concat(X, ')'),
-        laptop: '(max-width: '.concat(Z, ')'),
-        laptopL: '(max-width: '.concat(ee, ')'),
-        desktop: '(max-width: '.concat(ne, ')'),
-        desktopL: '(max-width: '.concat(ne, ')'),
-      };
+      var P = '375px',
+        Q = '425px',
+        X = '768px',
+        Z = '1024px',
+        ee = '1440px',
+        ne = '2560px',
+        te = {
+          mobileS: '(max-width: '.concat('320px', ')'),
+          mobileM: '(max-width: '.concat(P, ')'),
+          mobileL: '(max-width: '.concat(Q, ')'),
+          tablet: '(max-width: '.concat(X, ')'),
+          laptop: '(max-width: '.concat(Z, ')'),
+          laptopL: '(max-width: '.concat(ee, ')'),
+          desktop: '(max-width: '.concat(ne, ')'),
+          desktopL: '(max-width: '.concat(ne, ')'),
+        };
       function ae() {
-        const e = Object(S.a)([
+        var e = Object(S.a)([
           '\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n\n  @media ',
           ' {  \n    background-color: red;\n  }\n',
         ]);
@@ -296,10 +297,10 @@
           e
         );
       }
-      const re = x.b.div(ae(), te.tablet);
-      const oe = 'nav';
+      var re = x.b.div(ae(), te.tablet),
+        oe = 'nav';
       function ce(e) {
-        const n = e.items;
+        var n = e.items;
         return r.a.createElement(
           re,
           { id: oe },
@@ -309,7 +310,7 @@
         );
       }
       function ie() {
-        const e = Object(S.a)(['\n  background-color: ', ';\n  color: ', '\n']);
+        var e = Object(S.a)(['\n  background-color: ', ';\n  color: ', '\n']);
         return (
           (ie = function() {
             return e;
@@ -318,7 +319,7 @@
         );
       }
       function le() {
-        const e = Object(S.a)(['\n  height: 1000vh;\n']);
+        var e = Object(S.a)(['\n  height: 1000vh;\n']);
         return (
           (le = function() {
             return e;
@@ -327,7 +328,7 @@
         );
       }
       function ue() {
-        const e = Object(S.a)([
+        var e = Object(S.a)([
           '\n  padding: .15em 28px;\n  width: 100%;\n  min-height: 40px;\n  position: fixed;\n  top: 0px;\n  z-index: 1;\n  background: white;\n  opacity: ',
           ';\n  transition: opacity .3s ease-in-out;\n',
         ]);
@@ -338,35 +339,36 @@
           e
         );
       }
-      const me = x.b.div(ue(), e => (e.scrollY > 100 ? 0.9 : 1));
-      const se = x.b.div(le());
-      const de = x.b.div(ie(), O, k);
-      const fe = 'layout';
+      var me = x.b.div(ue(), function(e) {
+          return e.scrollY > 100 ? 0.9 : 1;
+        }),
+        se = x.b.div(le()),
+        de = x.b.div(ie(), O, k),
+        fe = 'layout';
       c.a.render(
         r.a.createElement(
           i.b,
           { routes: g },
           r.a.createElement(
-            e => {
-              const n = e.children;
-              const t = Object(a.useState)(window.scrollY);
-              const o = Object(E.a)(t, 2);
-              const c = o[0];
-              const l = o[1];
-              const u = Object(i.d)();
-              const m = function() {
-                return l(window.pageYOffset);
-              };
+            function(e) {
+              var n = e.children,
+                t = Object(a.useState)(window.scrollY),
+                o = Object(E.a)(t, 2),
+                c = o[0],
+                l = o[1],
+                u = Object(i.d)(),
+                m = function() {
+                  return l(window.pageYOffset);
+                };
               return (
-                Object(a.useEffect)(
-                  () => (
+                Object(a.useEffect)(function() {
+                  return (
                     window.addEventListener('scroll', m, !0),
                     function() {
                       window.removeEventListener('scroll', m, !0);
                     }
-                  ),
-                  [],
-                ),
+                  );
+                }, []),
                 r.a.createElement(
                   x.a,
                   { theme: { mode: 'light', colors: N } },
@@ -395,14 +397,14 @@
         document.getElementById('root'),
       ),
         'serviceWorker' in navigator &&
-          navigator.serviceWorker.ready.then(e => {
+          navigator.serviceWorker.ready.then(function(e) {
             e.unregister();
           });
     },
-    6(e, n, t) {
-      e.exports = `${t.p}static/media/logo.5d5d9eef.svg`;
+    6: function(e, n, t) {
+      e.exports = t.p + 'static/media/logo.5d5d9eef.svg';
     },
   },
   [[22, 1, 2]],
 ]);
-// # sourceMappingURL=main.af3d36c2.chunk.js.map
+//# sourceMappingURL=main.af3d36c2.chunk.js.map
