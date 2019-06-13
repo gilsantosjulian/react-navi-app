@@ -1,7 +1,0 @@
-/.git
-/.vscode
-node_modules
-/config
-/scripts
-/assets
-serviceWorker.js

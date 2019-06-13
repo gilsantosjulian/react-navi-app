@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-navi-app/static/css/main.bebb5df0.chunk.css",
+    "main.js": "/react-navi-app/static/js/main.af3d36c2.chunk.js",
+    "main.js.map": "/react-navi-app/static/js/main.af3d36c2.chunk.js.map",
+    "runtime~main.js": "/react-navi-app/static/js/runtime~main.468ece5f.js",
+    "runtime~main.js.map": "/react-navi-app/static/js/runtime~main.468ece5f.js.map",
+    "static/js/2.3bd4a2f5.chunk.js": "/react-navi-app/static/js/2.3bd4a2f5.chunk.js",
+    "static/js/2.3bd4a2f5.chunk.js.map": "/react-navi-app/static/js/2.3bd4a2f5.chunk.js.map",
+    "index.html": "/react-navi-app/index.html",
+    "precache-manifest.9d2f0ea9cbb263130c3453a8b093f732.js": "/react-navi-app/precache-manifest.9d2f0ea9cbb263130c3453a8b093f732.js",
+    "service-worker.js": "/react-navi-app/service-worker.js",
+    "static/css/main.bebb5df0.chunk.css.map": "/react-navi-app/static/css/main.bebb5df0.chunk.css.map",
+    "static/media/logo.svg": "/react-navi-app/static/media/logo.5d5d9eef.svg"
+  }
+}
