@@ -7,6 +7,5 @@ export const Wrapper = Styled.div`
   justify-content: space-between;
 
   @media ${device.tablet} {  
-    background-color: red;
   }
 `;

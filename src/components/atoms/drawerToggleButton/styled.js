@@ -1,12 +1,22 @@
 import Styled from 'styled-components';
+import { device, size, } from '../../../config/device';
 
 export const ToogleButton = Styled.div`
   position: relative;
-  display: block;
-  margin-top: -13px;
-  margin-right: 6%;
+  display: none;
+  right: 13%;
+  margin-top: -10px;
   z-index: 1999;
   transform: translateY(40%);
+
+  @media (min-width: ${size.tablet}) {  
+    right: 7%;
+  }
+
+  @media ${device.tablet} {  
+    display: block;
+  }
+
 `;
 
 export const ToogleButtonLine = Styled.div`
