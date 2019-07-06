@@ -4,8 +4,8 @@ import { ThemeProvider, } from 'styled-components';
 import { useLoadingRoute, } from 'react-navi';
 import { colors, } from '../../../config/theme';
 import { items, } from '../../../config/constants';
-import Nav from '../../organisms/nav/Nav';
-import { Wrapper, Main, Header, } from './styled';
+import Header from '../../organisms/header/Header';
+import { Wrapper, Main, Container, } from './styled';
 
 const ID = 'layout';
 
@@ -30,9 +30,9 @@ export default function Layout({ children, }) {
       <Wrapper id={ID}>
         {/* This component shows a loading indicator after a delay */}
         <BusyIndicator isBusy={!!loadingRoute} delayMs={200} />
-        <Header id="header" scrollY={scrollY}>
-          <Nav items={items} />
-        </Header>
+        <Container id="container" scrollY={scrollY}>
+          <Header items={items} />
+        </Container>
         <Main>{children}</Main>
       </Wrapper>
     </ThemeProvider>

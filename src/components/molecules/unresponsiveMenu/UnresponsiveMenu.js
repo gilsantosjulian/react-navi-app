@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import Navlink from '../../atoms/navLink/NavLink';
 import { Wrapper, } from './styled';
 
-const ID = 'ul';
+const ID = 'nav';
 
-export default function Ul(props) {
+export default function UnresponsiveMenu(props) {
   const { items, } = props;
 
   return (
@@ -17,6 +17,6 @@ export default function Ul(props) {
   );
 }
 
-Ul.propTypes = {
+UnresponsiveMenu.propTypes = {
   items: PropTypes.instanceOf(PropTypes.object).isRequired,
 };
