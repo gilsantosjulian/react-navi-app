@@ -1,7 +1,7 @@
 import Styled from 'styled-components';
 import { backgroundColor, textColor, } from '../../../config/theme';
 
-export const Header = Styled.div`
+export const Container = Styled.div`
   padding: .15em 28px;
   width: 100%;
   min-height: 40px;
