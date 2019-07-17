@@ -15,6 +15,8 @@ export const Container = Styled.div`
 
 export const Main = Styled.div`
   height: 1000vh;
+  opacity ${props => props.opacity};
+  transition: opacity .2s ease-in-out;
 `;
 
 // apply theming to a styled component
