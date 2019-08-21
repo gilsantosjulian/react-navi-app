@@ -12,7 +12,7 @@ function Navlink(props) {
   const [ dispatch, ] = useStateValue();
   const anchorStyle = { ...styles.anchor, color: theme.colors.primary, };
 
-  const onClick = () => dispatch({
+  const onChange = () => dispatch({
     type: 'showResponsiveMenu',
   });
 
@@ -23,7 +23,7 @@ function Navlink(props) {
         style={anchorStyle}
         key={`${item.href}-${item.title}`}
         href={item.href}
-        onClick={onClick}
+        onChange={onChange}
       >
         <Span>{item.title}</Span>
       </Link>
