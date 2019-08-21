@@ -24,6 +24,7 @@ function Navlink(props) {
         key={`${item.href}-${item.title}`}
         href={item.href}
         onChange={onChange}
+        activeClassName="active"
       >
         <Span>{item.title}</Span>
       </Link>

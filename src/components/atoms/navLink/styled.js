@@ -20,9 +20,10 @@ export const NavLink = Styled.li`
     opacity: 0.8;
   }
 
-  &:active {
+  .active span {
     transform: scale(0.95);
     opacity: 0.6;
+    color: ${props => props.theme.colors.secondary};
   }
 
   @media ${device.tablet} {  
@@ -42,7 +43,7 @@ export const Span = Styled.span`
   font-weight: 300;
   font-size: 16px;
   padding: .6em;
-
+  
   &:hover {
     color: ${props => props.theme.colors.secondary};
   }
