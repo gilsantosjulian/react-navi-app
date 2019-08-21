@@ -10,6 +10,7 @@ export const items = [
   {
     dropdown: true,
     title: 'Services',
+    href: '/services',
     items: [
       {
         name: 'Service One',

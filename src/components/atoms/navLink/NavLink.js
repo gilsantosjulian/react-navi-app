@@ -2,13 +2,19 @@ import React from 'react';
 import { Link, } from 'react-navi';
 import PropTypes from 'prop-types';
 import { withTheme, } from 'styled-components';
+import { useStateValue, } from '../../../stateContext';
 import { NavLink, Span, styles, } from './styled';
 
 const ID = 'li';
 
 function Navlink(props) {
   const { item, theme, } = props;
+  const [ dispatch, ] = useStateValue();
   const anchorStyle = { ...styles.anchor, color: theme.colors.primary, };
+
+  const onClick = () => dispatch({
+    type: 'showResponsiveMenu',
+  });
 
   return (
     <NavLink id={ID} key={`${item.href}-${item.title}`}>
@@ -17,6 +23,7 @@ function Navlink(props) {
         style={anchorStyle}
         key={`${item.href}-${item.title}`}
         href={item.href}
+        onClick={onClick}
       >
         <Span>{item.title}</Span>
       </Link>

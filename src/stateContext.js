@@ -13,7 +13,7 @@ const reducer = (state, action) => {
       return {
         ...state,
         opacity: true,
-        showResponsiveMenu: true,
+        showResponsiveMenu: !state.showResponsiveMenu,
       };
 
     default:
