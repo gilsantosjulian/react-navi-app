@@ -13,7 +13,7 @@ export const Wrapper = Styled.nav`
   -webkit-overflow-scrolling: touch;
   position: fixed;
   top: 0;
-  z-index: 11111;
+  z-index: -1;
   text-align: left;
   right: 0;
   

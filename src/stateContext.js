@@ -10,6 +10,8 @@ const initialState = {
 const reducer = (state, action) => {
   switch (action.type) {
     case 'showResponsiveMenu':
+      // console.log('entra');
+      // console.log(state.showResponsiveMenu);
       return {
         ...state,
         opacity: true,
