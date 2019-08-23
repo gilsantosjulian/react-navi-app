@@ -12,7 +12,7 @@ const ID = 'layout';
 
 export default function Layout({ children, }) {
   const [ scrollY, setScrollY, ] = useState(window.scrollY);
-  const [ { opacity, }, ] = useStateValue();
+  const [ { opacity, showResponsiveMenu, }, ] = useStateValue();
 
   // If there is a route that hasn't finished loading, it can be
   // retrieved with `useLoadingRoute()`.
@@ -35,7 +35,7 @@ export default function Layout({ children, }) {
         <Container id="container" scrollY={scrollY}>
           <Header items={items} />
         </Container>
-        <Main id="main" opacity={opacity ? '0.5' : '1'}>
+        <Main id="main" opacity={opacity ? '0.5' : '1'} transition={showResponsiveMenu}>
           {children}
         </Main>
       </Wrapper>
