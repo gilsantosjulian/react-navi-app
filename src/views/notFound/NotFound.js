@@ -1,7 +1,11 @@
 import React from 'react';
 
 function NotFound() {
-  return <div className="App">NotFound View</div>;
+  return (
+    <div className="App" style={{ marginTop: 200, }}>
+      NotFound View
+    </div>
+  );
 }
 
 export default NotFound;

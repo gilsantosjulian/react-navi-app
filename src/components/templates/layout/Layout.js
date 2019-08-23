@@ -1,7 +1,8 @@
 import React, { useState, useEffect, } from 'react';
 import BusyIndicator from 'react-busy-indicator';
+import { NotFoundBoundary, useLoadingRoute, } from 'react-navi';
 import { ThemeProvider, } from 'styled-components';
-import { useLoadingRoute, } from 'react-navi';
+import NotFound from '../../../views/notFound/NotFound';
 import { useStateValue, } from '../../../stateContext';
 import { colors, } from '../../../config/theme';
 import { items, } from '../../../config/constants';
@@ -36,7 +37,7 @@ export default function Layout({ children, }) {
           <Header items={items} />
         </Container>
         <Main id="main" opacity={opacity ? '0.5' : '1'} transition={showResponsiveMenu}>
-          {children}
+          <NotFoundBoundary render={() => <NotFound />}>{children}</NotFoundBoundary>
         </Main>
       </Wrapper>
     </ThemeProvider>
