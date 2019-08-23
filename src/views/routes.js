@@ -10,6 +10,11 @@ import NotFound from './notFound/NotFound';
 
 // Define your routes
 const routes = mount({
+  '/': route({
+    title: 'Home',
+    getData: () => {},
+    view: <Home />,
+  }),
   '/home': route({
     title: 'Home',
     getData: () => {},
