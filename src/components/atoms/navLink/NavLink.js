@@ -23,7 +23,7 @@ function Navlink(props) {
         style={anchorStyle}
         key={`${item.href}-${item.title}`}
         href={item.href}
-        onChange={onChange}
+        onClick={onChange}
         activeClassName="active"
       >
         <Span>{item.title}</Span>
