@@ -12,7 +12,7 @@ const reducer = (state, action) => {
     case 'showResponsiveMenu':
       return {
         ...state,
-        opacity: true,
+        opacity: !state.opacity,
         showResponsiveMenu: !state.showResponsiveMenu,
       };
 

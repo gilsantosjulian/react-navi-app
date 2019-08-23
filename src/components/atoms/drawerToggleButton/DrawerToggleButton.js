@@ -3,9 +3,9 @@ import { useStateValue, } from '../../../stateContext';
 import { ToogleButton, ToogleButtonLine, } from './styled';
 
 export default function DrawerToogeButton() {
-  const [ { opacity, }, dispatch, ] = useStateValue();
+  // eslint-disable-next-line no-empty-pattern
+  const [ {}, dispatch, ] = useStateValue();
   const [ pressed, setPressed, ] = useState(false);
-  console.log(opacity);
 
   const onChange = () => {
     setPressed(!pressed);
