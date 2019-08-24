@@ -15,6 +15,11 @@ const routes = mount({
     getData: () => {},
     view: <Home />,
   }),
+  '/home': route({
+    title: 'Home',
+    getData: () => {},
+    view: <Home />,
+  }),
   '/about-us': route({
     title: 'About Us',
     getData: () => {},

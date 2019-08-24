@@ -23,7 +23,8 @@ module.exports = {
     ], // allow .js extension
     'react/jsx-one-expression-per-line': 'off', // disable put jsx expressions in a new line,
     'react/prefer-stateless-function': 1, // Only use function components 'Warning'
-    'react/prop-types': [2, { ignore: ['children'] }], // Avoid validate props when is children
+    // 'react/prop-types': [2, { ignore: ['children'] }], // Avoid validate props when is children
+    'react/prop-types': 'off', // Avoid validate props when is children
     'no-console': 'off', // Don't use console.log() 'Warning'
     'no-alert': 1, // Don't use alert()'Warning'
     'space-before-function-paren': 0, // space between functions

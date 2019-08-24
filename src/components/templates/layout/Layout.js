@@ -1,7 +1,9 @@
 import React, { useState, useEffect, } from 'react';
 import BusyIndicator from 'react-busy-indicator';
+import { NotFoundBoundary, useLoadingRoute, } from 'react-navi';
 import { ThemeProvider, } from 'styled-components';
-import { useLoadingRoute, } from 'react-navi';
+import NotFound from '../../../views/notFound/NotFound';
+import { useStateValue, } from '../../../stateContext';
 import { colors, } from '../../../config/theme';
 import { items, } from '../../../config/constants';
 import Header from '../../organisms/header/Header';
@@ -11,6 +13,7 @@ const ID = 'layout';
 
 export default function Layout({ children, }) {
   const [ scrollY, setScrollY, ] = useState(window.scrollY);
+  const [ { opacity, showResponsiveMenu, }, ] = useStateValue();
 
   // If there is a route that hasn't finished loading, it can be
   // retrieved with `useLoadingRoute()`.
@@ -33,7 +36,9 @@ export default function Layout({ children, }) {
         <Container id="container" scrollY={scrollY}>
           <Header items={items} />
         </Container>
-        <Main>{children}</Main>
+        <Main id="main" opacity={opacity ? '0.5' : '1'} transition={showResponsiveMenu}>
+          <NotFoundBoundary render={() => <NotFound />}>{children}</NotFoundBoundary>
+        </Main>
       </Wrapper>
     </ThemeProvider>
   );
