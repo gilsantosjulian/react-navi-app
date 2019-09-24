@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
+import './carousel.css';
 
 const content = [
   {
@@ -33,9 +34,22 @@ function Carousel() {
   return (
     <Slider>
       {content.map((article, index) => (
-        <div key={index}>
-          <h2>{article.title}</h2>
-          <div>{article.description}</div>
+        <div
+          key={index}
+          className="slider-content"
+          style={{ background: `url('${article.image}') no-repeat center center`, }}
+        >
+          <div className="inner">
+            <h1>{article.title}</h1>
+            <p>{article.description}</p>
+            <button>{article.button}</button>
+          </div>
+          <section>
+            <img src={article.userProfile} alt={article.user} />
+            <span>
+              Posted by <strong>{article.user}</strong>
+            </span>
+          </section>
         </div>
       ))}
     </Slider>
