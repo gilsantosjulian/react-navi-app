@@ -44,5 +44,6 @@ module.exports = {
     'no-await-in-loop': 'off', // enable await for using it inside a loop
     'import/prefer-default-export': 'off', // export default not mandatory
     'array-bracket-spacing': ['error', 'always'], // to put sapaces at the begining and the end of array
+    'react/no-array-index-key': 'off', // disable index inside array elements
   },
 };
