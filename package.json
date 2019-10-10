@@ -30,23 +30,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prettier": "prettier 'src/**/*.{js,jsx}' --write",
+    "prettier": "prettier --write",
     "lint": "eslint --debug 'src/**/*.{js,jsx}'",
-    "lint:write": "eslint --debug 'src/**/*.{js,jsx}' --fix",
+    "lint:write": "eslint --debug --fix",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.(js)": [
-      "npm run prettier",
-      "npm run lint:write",
-      "git add"
-    ]
   },
   "eslintConfig": {
     "extends": "react-app"
