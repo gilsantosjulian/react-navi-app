@@ -40,13 +40,6 @@
       "pre-commit": "lint-staged"
     }
   },
-  "lint-staged": {
-    "*.(js)": [
-      "npm run prettier",
-      "npm run lint:write",
-      "git add"
-    ]
-  },
   "eslintConfig": {
     "extends": "react-app"
   },
