@@ -30,7 +30,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prettier": "prettier --write",
-    "lint": "eslint --debug",
+    "lint": "eslint --debug 'src/**/*.{js,jsx}'",
     "lint:write": "eslint --debug --fix",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
